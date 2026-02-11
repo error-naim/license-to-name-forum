@@ -1,5 +1,31 @@
-.body {
-  background: /* Existing background style here */;
+/* Global page styling (restored from original inline styles) */
+body {
+  background-color: #339933;
+  color: yellow;
+  font-family: 'Comic Sans MS', 'Courier New', monospace;
+  font-size: 16px;
+  text-align: center;
+
+  /* Layout */
+  margin: 0;
+  padding-bottom: 40px; /* space for fixed footer */
+
+  /* Existing custom cursor */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="black"><rect width="16" height="16" fill="#FFBBCC" stroke="black"/><path d="M0,0 L16,0 L16,16 L0,16 Z" fill-opacity="0"/></svg>') 8 8, auto;
+}
+
+h1 {
+  text-shadow: 2px 2px #FF0000;
+}
+
+/* Link styling (restored) */
+a {
+  color: #FF9900;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
 }
 
 header {
@@ -15,14 +41,6 @@ button {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="yellow" fill="none"><cross xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4 L20 20 M4 20 L20 4"/></svg>') 10 10, auto;
 }
 
-/* Global page cursor + layout spacing */
-body {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="black"><rect width="16" height="16" fill="#FFBBCC" stroke="black"/><path d="M0,0 L16,0 L16,16 L0,16 Z" fill-opacity="0"/></svg>') 8 8, auto;
-
-  margin: 0;
-  padding-bottom: 40px; /* space for fixed footer */
-}
-
 /* Top navigation bar */
 .topbar {
   background-color: #000000;
@@ -35,14 +53,14 @@ body {
   color: #FF9900;
   margin: 0 15px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: none; /* nav links look like buttons */
 }
 
 .topbar a:hover {
   color: white;
 }
 
-/* Forum post box (moved from inline styles) */
+/* Forum post box */
 .forum-post {
   background-color: #0000FF;
   border: 2px dashed yellow;
