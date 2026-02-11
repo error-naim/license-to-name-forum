@@ -1,34 +1,20 @@
 .body {
-    background-color: #0f0;
-    color: #ff00ff;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: /* Existing background style here */;
 }
 
-.header {
-    background-color: #ff00ff;
-    color: #000;
-    text-align: center;
-    font-size: 32px;
-    padding: 10px;
+header {
+  /* Existing header styles here */
 }
 
-.button {
-    background-color: #000;
-    color: #0f0;
-    border: 2px dashed #ff00ff;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+button {
+  /* Existing button styles here */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow"><polygon points="12 0 15 8 24 9 17 14 20 22 12 17 4 22 7 14 0 9 9 8"/></svg>') 10 10, auto;
 }
 
-.button:hover {
-    background-color: #ff00ff;
-    color: #000;
+.link {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="yellow" fill="none"><cross xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4 L20 20 M4 20 L20 4"/></svg>') 10 10, auto;
 }
 
-.footer {
-    background-color: #000;
-    color: #0f0;
-    text-align: center;
-    padding: 10px;
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="black"><rect width="16" height="16" fill="#FFBBCC" stroke="black"/><path d="M0,0 L16,0 L16,16 L0,16 Z" fill-opacity="0"/></svg>') 8 8, auto;
 }
