@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Retro 90s Forum</title>
+    <style>
+        body {
+            background-color: #339933;
+            color: yellow;
+            font-family: 'Comic Sans MS', 'Courier New', monospace;
+            font-size: 16px;
+            text-align: center;
+        }
+        h1 {
+            text-shadow: 2px 2px #FF0000;
+        }
+        a {
+            color: #FF9900;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: white;
+        }
+        .forum-post {
+            background-color: #0000FF;
+            border: 2px dashed yellow;
+            margin: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Website!</h1>
-        <p>Your one-stop solution for naming a forum.</p>
-    </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>We provide tools and resources for creating the perfect name for your forum.</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to <a href="contact.html">reach out!</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Forum Naming Service</p>
-    </footer>
+    <h1>Welcome to the Retro 90s Forum!</h1>
+    <div class="forum-post">
+        <h2>Post Title</h2>
+        <p>This is an example post. Feel free to share your thoughts!</p>
+        <p><a href="#">Reply</a> | <a href="#">Edit</a></p>
+    </div>
+    <p><a href="#">Home</a> | <a href="#">New Post</a> | <a href="#">Profile</a></p>
 </body>
 </html>
