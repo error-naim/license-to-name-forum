@@ -11,17 +11,31 @@
             font-family: 'Comic Sans MS', 'Courier New', monospace;
             font-size: 16px;
             text-align: center;
+            margin: 0;
         }
+
+        /* Top navigation bar */
+        .topbar {
+            background-color: #000000;
+            padding: 10px;
+            border-bottom: 3px dashed yellow;
+        }
+
+        .topbar a {
+            color: #FF9900;
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .topbar a:hover {
+            color: white;
+        }
+
         h1 {
             text-shadow: 2px 2px #FF0000;
         }
-        a {
-            color: #FF9900;
-            text-decoration: underline;
-        }
-        a:hover {
-            color: white;
-        }
+
         .forum-post {
             background-color: #0000FF;
             border: 2px dashed yellow;
@@ -32,10 +46,19 @@
     </style>
 </head>
 <body>
+
+    <!-- Top Navigation -->
+    <div class="topbar">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+    </div>
+
     <h1>Welcome to License To Name!</h1>
+
     <div class="forum-post">
         <h2>MOTD</h2>
         <p>A MOTD has not been set yet</p>
     </div>
+
 </body>
 </html>
