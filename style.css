@@ -19,7 +19,6 @@ button {
 body {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="black"><rect width="16" height="16" fill="#FFBBCC" stroke="black"/><path d="M0,0 L16,0 L16,16 L0,16 Z" fill-opacity="0"/></svg>') 8 8, auto;
 
-  /* Added for site layout */
   margin: 0;
   padding-bottom: 40px; /* space for fixed footer */
 }
@@ -41,6 +40,16 @@ body {
 
 .topbar a:hover {
   color: white;
+}
+
+/* Forum post box (moved from inline styles) */
+.forum-post {
+  background-color: #0000FF;
+  border: 2px dashed yellow;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 700px;
 }
 
 /* Footer */
