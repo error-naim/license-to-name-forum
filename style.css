@@ -185,6 +185,118 @@ button:active {
   font-size: 12px;
 }
 
+.lejc-page {
+  padding: 0;
+}
+
+.lejc-hero {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  border-bottom: 2px solid #8f8f8f;
+}
+
+.lejc-hero img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.lejc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.6));
+}
+
+.lejc-hero-overlay h2 {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 6vw, 4.4rem);
+  line-height: 1.12;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  background: transparent;
+  text-shadow: 2px 2px 0 #000000;
+}
+
+.lejc-hero-overlay p {
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.lejc-contact {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(180px, 220px) 1fr;
+  padding: 18px 14px 14px;
+}
+
+.lejc-contact-title h3 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.lejc-contact-title img {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border: 1px solid #9d9d9d;
+  background: #ffffff;
+}
+
+.lejc-form {
+  display: grid;
+  gap: 10px;
+}
+
+.lejc-form-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lejc-form input,
+.lejc-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px 9px;
+  border: 1px solid #8f8f8f;
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.lejc-form textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.lejc-form button {
+  justify-self: start;
+  min-width: 86px;
+}
+
+.lejc-copy {
+  margin: 0;
+  padding: 0 14px 14px;
+  font-size: 12px;
+  color: #4b4b4b;
+}
+
 .bottom-link {
   max-width: 760px;
   margin: auto auto 8px;
@@ -241,5 +353,26 @@ button:active {
 
   .forum-post h2 {
     margin: -10px -10px 8px;
+  }
+
+  .lejc-hero {
+    min-height: 250px;
+  }
+
+  .lejc-hero img {
+    height: 250px;
+  }
+
+  .lejc-contact {
+    grid-template-columns: 1fr;
+    padding: 14px 10px 10px;
+  }
+
+  .lejc-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lejc-copy {
+    padding: 0 10px 10px;
   }
 }
