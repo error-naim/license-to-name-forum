@@ -231,8 +231,11 @@ button:active {
 
 .lejc-hero-overlay p {
   margin: 0;
+  color: #ffe066;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  text-shadow: 1px 1px 0 #000000;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 0 #000000;
 }
 
 .lejc-contact {
@@ -252,8 +255,10 @@ button:active {
 .lejc-contact-title img {
   display: block;
   width: 100%;
-  max-width: 120px;
-  height: auto;
+  max-width: none;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid #9d9d9d;
   background: #ffffff;
 }
