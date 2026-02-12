@@ -19,6 +19,8 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 14px 10px 20px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: var(--ink);
   font-family: Verdana, Tahoma, "MS Sans Serif", sans-serif;
@@ -153,7 +155,7 @@ button:active {
 
 .bottom-link {
   max-width: 760px;
-  margin: 18px auto 8px;
+  margin: auto auto 8px;
   padding: 8px 10px;
   text-align: center;
   color: #ffffff;
@@ -176,13 +178,17 @@ button:active {
 
 .footer {
   max-width: 860px;
-  margin: 14px auto 0;
+  margin: auto auto 0;
   padding: 8px 10px;
   text-align: center;
   font-size: 12px;
   color: #000000;
   background: var(--ui-gray);
   border: 2px outset var(--ui-gray-light);
+}
+
+.bottom-link + .footer {
+  margin-top: 10px;
 }
 
 @media (max-width: 640px) {
